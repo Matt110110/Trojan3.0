@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://wallpaperscraft.com/image/triangle_shape_dark_figure_88540_1920x1080.jpg);
+    background-size: cover;
+}
+#HeaderNav {
+    text-decoration: none;
+    border-radius: 0;
+    height: 100px;
+    background-color: transparent;
+}
+#headerLink {
+    text-decoration: none;
+    display: inline-block;
+}
+#Icon {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: -15px; 
+    float: left;
+}
+/* .btn {
+    position: relative;
+} */
+#LogIn {
+    text-align: center;
+    top: 14px;
+}
+a, a:hover {
+    color: goldenrod;
+    text-decoration: none;
+}
