@@ -26,7 +26,7 @@ body {
 /* .btn {
     position: relative;
 } */
-#LogIn {
+#NavTab {
     text-align: center;
     top: 14px;
 }
@@ -34,15 +34,32 @@ a, a:hover {
     color: goldenrod;
     text-decoration: none;
 }
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: goldenrod;
+    border-radius: 0;
+    transition: .2s;
+}
+.btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+}
 .carousel-inner img {
     -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */ 
-    width: 100%; /* Set width to 100% */
+    filter: grayscale(90%); 
+    width: 100%;
     margin: auto;
 }
 .carousel-caption h3 {
     color: #fff !important;
 }
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
 .modal-header, .modal-body {
     padding: 40px 50px;
 }
@@ -51,4 +68,29 @@ a, a:hover {
     height: 400px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-}  
+} 
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+} 
+.nav-tabs li a {
+    color: goldenrod;
+}
+.navbar li a, .navbar .navbar-brand { 
+    color: goldenrod !important;
+}
+.navbar-nav li a:hover {
+    color: goldenrod !important;
+}
+.navbar-nav li.active a {
+    color: goldenrod !important;
+    background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}

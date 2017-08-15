@@ -40,8 +40,6 @@ $("Document").ready(function () {
     $("#github").click(function () {
         window.location="https://github.com/Matt110110";
     });
-    $("#facebook").addClass("w3-text-blue");
-    $("#twitter").addClass("w3-text-indigo");
-    $("#insta").addClass("w3-text-pink");
-    $("#linkedIn").addClass("w3-text-aqua");
+    
+
 });
