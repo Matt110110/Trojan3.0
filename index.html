@@ -2,8 +2,11 @@
 <html>
     <head>
         <title>Trojan 3.0</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="style.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -11,9 +14,10 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
         </script>
     </head>
-    <body>
+    <body class="w3-black">
         <header>
             <div id="HeaderNav">
                 <div>
@@ -21,7 +25,7 @@
                         <div class="navbar-brand">
                             <a href="index.html" id="headerLink">
                                 <h1 class="ImpText">
-                                    <span>  <img id="Icon" src="http://www.laxdecalz.com/mascots/LC-MAS-TROJAN.png"/> </span>
+                                    <span>  <img id="Icon" src="http://www.laxdecalz.com/mascots/LC-MAS-TROJAN.png" alt="Icon"/> </span>
                                 </h1>
                             </a>
                         </div>
@@ -36,10 +40,100 @@
             </div>
         </header>
 
-        <footer>
-            <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New York" width="1200" height="700">
+                    <div class="carousel-caption">
+                      <h3>New York</h3>
+                      <p>The atmosphere in New York is lorem ipsum.</p>
+                    </div>      
+                  </div>
+            
+                  <div class="item">
+                    <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" width="1200" height="700">
+                    <div class="carousel-caption">
+                      <h3>Chicago</h3>
+                      <p>Thank you, Chicago - A night we won't forget.</p>
+                    </div>      
+                  </div>
+                
+                  <div class="item">
+                    <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" width="1200" height="700">
+                    <div class="carousel-caption">
+                      <h3>LA</h3>
+                      <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+                    </div>      
+                  </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
             </div>
-        </footer>
+
+            <div id="contact" class="container">
+                    <h3 class="text-center">Contact</h3>
+                    <p class="text-center"><em>We love our fans!</em></p>
+                  
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p>Fan? Drop a note.</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+                        <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                        <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
+                          <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                          </div>
+                          <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                          </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                        <br>
+                        <div class="row">
+                          <div class="col-md-12 form-group">
+                            <button class="btn pull-right" type="submit">Send</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                   <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.5754184794037!2d85.77365031455517!3d20.276436086410662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7f9d486f7c3%3A0xde71ead59307dcca!2sCollege+of+Engineering+And+Technology!5e0!3m2!1sen!2sin!4v1502763080353" width="1142" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                   </div>
+            
+
+            <footer class="text-center">
+                <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                  <span class="glyphicon glyphicon-chevron-up"></span>
+                </a><br><br>
+                <p>Find me on social media.</p>
+                <button class="w3-btn" id="facebook"> <i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" ></i> </button> 
+                <button class="w3-btn" id="insta"> <i class="fa fa-instagram w3-hover-opacity w3-xlarge"></i> </button>
+                <button class="w3-btn" id="twitter"> <i class="fa fa-twitter w3-hover-opacity w3-xlarge"></i></button>
+                <button class="w3-btn" id="linkedIn"> <i class="fa fa-linkedin w3-hover-opacity w3-xlarge"></i></button>
+            </footer>
+                      
+        <!-- End of Containiner fluid class -->
+        
         <!-- Javascript-->
         <script type="text/javascript" src="script.js"></script>
     </body>

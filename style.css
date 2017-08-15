@@ -2,8 +2,9 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(https://wallpaperscraft.com/image/triangle_shape_dark_figure_88540_1920x1080.jpg);
-    background-size: cover;
+    /* background-image: url(https://wallpaperscraft.com/image/triangle_shape_dark_figure_88540_1920x1080.jpg);
+    background-size: cover; */
+    font: 400 15px/1.8 Lato, sans-serif;
 }
 #HeaderNav {
     text-decoration: none;
@@ -33,3 +34,21 @@ a, a:hover {
     color: goldenrod;
     text-decoration: none;
 }
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}  
