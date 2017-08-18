@@ -1,18 +1,18 @@
 $("Document").ready(function () {
     $("#linkedIn").click(function () {
-        window.location="https://www.linkedin.com/in/matruprasad-chand-137a35133/";
+        window.location="https://www.linkedin.com/";
     });
     $("#twitter").click(function () {
-        window.location="https://twitter.com/Matt110110";
+        window.location="https://twitter.com/";
     });
     $("#facebook").click(function () {
-        window.location="https://www.facebook.com/Matt110110";
+        window.location="https://www.facebook.com/";
     });
     $("#insta").click(function () {
-        window.location="https://www.instagram.com/matt110110/";
+        window.location="https://www.instagram.com/";
     });
     $("#github").click(function () {
-        window.location="https://github.com/Matt110110";
+        window.location="https://github.com/";
     });
 });
 document.getElementById("But").addEventListener("click", function () {
